@@ -1,0 +1,17 @@
+build/
+softcpu
+*.o
+*.obj
+*.exe
+*.log
+*.aux
+*.out
+*.toc
+*.pdfsync
+*.synctex.gz
+report/aurora_report.log
+report/aurora_report.aux
+report/aurora_report.out
+report/aurora_report.toc
+assets/video_frames/
+__pycache__/
