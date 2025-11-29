@@ -1,6 +1,6 @@
-# Aurora-16 Software CPU
+# SoftCPU-16 Software CPU
 
-Aurora-16 is a 16-bit software CPU that couples a small yet expressive ISA with an emulator, assembler, and example programs. The project demonstrates how a CPU can be specified, simulated, and programmed end-to-end using modern C++20.
+SoftCPU-16 is a teaching-oriented 16-bit software CPU that couples a small yet expressive ISA with an emulator, assembler, and example programs. The project demonstrates how a CPU can be specified, simulated, and programmed end-to-end using modern C++20.
 
 ## Repository layout
 
@@ -8,7 +8,7 @@ Aurora-16 is a 16-bit software CPU that couples a small yet expressive ISA with 
 .
 ├── assets/              # Generated schematic, demo video, and supporting figures
 ├── docs/                # ISA, architecture, emulator, assembler, and program notes
-├── include/aurora/      # Public headers for the core emulator components
+├── include/softcpu/     # Public headers for the core emulator components
 ├── programs/            # Sample assembly programs (Hello World, Fibonacci, Timer IO)
 ├── report/              # Team report (LaTeX source + PDF)
 ├── src/                 # C++ sources for the emulator, assembler, devices, CLI
@@ -38,11 +38,11 @@ make clean      # removes artifacts
 - `docs/assembler.md` – Assembler pipeline, directives, labels, and literal formats.
 - `docs/emulator.md` – Emulator subsystems (CPU, ALU, bus, memory mapped IO devices) and tooling (load/run/dump).
 - `docs/programs.md` – Walkthroughs of the Hello World, Fibonacci, and Timer demos including a fetch/compute/store timeline.
-- `report/aurora_report.pdf` – Team report with team roster, GitHub link, and contributions page.
+- `report/softcpu_report.pdf` – Team report with team roster, GitHub link, and contributions page.
 
 ## Demo assets
 
-- `assets/cpu_schematic.png` – Diagram of the Aurora-16 datapath.
+- `assets/cpu_schematic.png` – Diagram of the SoftCPU-16 datapath.
 - `assets/fibonacci_demo.mp4` – Narrated slide-style video highlighting how the Fibonacci assembly program works.
 
 ## Authors

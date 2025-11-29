@@ -1,6 +1,6 @@
 # Emulator and Tooling
 
-The `softcpu` binary links together the Aurora core (memory, bus, devices, CPU) and exposes helper commands.
+The `softcpu` binary links together the SoftCPU core (memory, bus, devices, CPU) and exposes helper commands.
 
 ## Components
 

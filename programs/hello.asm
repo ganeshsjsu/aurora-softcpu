@@ -1,4 +1,4 @@
-; Hello World for Aurora-16
+; Hello World for SoftCPU-16
 .const IO_CONSOLE_DATA 0xFF00
 
         .org 0x0000

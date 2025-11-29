@@ -1,6 +1,6 @@
-# Aurora-16 Assembler
+# SoftCPU-16 Assembler
 
-Aurora's two-pass assembler converts readable assembly into binary images that the emulator can load directly.
+SoftCPU's two-pass assembler converts readable assembly into binary images that the emulator can load directly.
 
 ## Pipeline
 

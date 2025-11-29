@@ -1,5 +1,5 @@
 build/
-softcpu
+/softcpu
 *.o
 *.obj
 *.exe
@@ -9,9 +9,9 @@ softcpu
 *.toc
 *.pdfsync
 *.synctex.gz
-report/aurora_report.log
-report/aurora_report.aux
-report/aurora_report.out
-report/aurora_report.toc
+report/softcpu_report.log
+report/softcpu_report.aux
+report/softcpu_report.out
+report/softcpu_report.toc
 assets/video_frames/
 __pycache__/

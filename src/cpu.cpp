@@ -1,27 +1,30 @@
-#include "aurora/cpu.hpp"
+#include "softcpu/cpu.hpp"
 
-#include "aurora/alu.hpp"
-#include "aurora/bus.hpp"
-#include "aurora/control_unit.hpp"
+#include "softcpu/alu.hpp"
+#include "softcpu/bus.hpp"
+#include "softcpu/control_unit.hpp"
 
-namespace aurora {
+namespace softcpu {
 
-CPU::CPU(Bus& bus) : bus_(bus) {
-    alu_ = std::make_unique<ALU>();
-    control_ = std::make_unique<ControlUnit>(bus_, registers_, *alu_);
-    reset();
+CPU::CPU(Bus &bus) : bus_(bus) {
+  alu_ = std::make_unique<ALU>();
+  control_ = std::make_unique<ControlUnit>(bus_, registers_, *alu_);
+  reset();
 }
 
 CPU::~CPU() = default;
 
 void CPU::reset() {
-    registers_.reset();
-    control_->reset();
+  registers_.reset();
+  control_->reset();
 }
 
 bool CPU::step(bool trace) {
-    bus_.tickDevices();
-    return control_->step(trace);
+  // Update I/O devices (e.g., timers)
+  bus_.tickDevices();
+
+  // Execute one instruction
+  return control_->step(trace);
 }
 
-}  // namespace aurora
+} // namespace softcpu

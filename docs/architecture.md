@@ -1,10 +1,10 @@
-# Aurora-16 Architecture and ISA
+# SoftCPU-16 Architecture and ISA
 
 ## CPU schematic
 
-![Aurora-16 schematic](../assets/CPU_schematic.png)
+![SoftCPU-16 schematic](../assets/cpu_schematic.png)
 
-Aurora-16 is a single-cycle, von Neumann CPU with a Harvard-style conceptual split between instruction control and data movement. The datapath consists of:
+SoftCPU-16 is a single-cycle, von Neumann CPU with a Harvard-style conceptual split between instruction control and data movement. The datapath consists of:
 
 - **Register file:** eight 16-bit general purpose registers R0–R7. `R7` doubles as the stack pointer (SP) with a reset value of `0xFF00`. Program counter (PC) is separate but flows through the fetch path.
 - **ALU:** performs arithmetic (add/sub/mul/div), logic (and/or/xor/not), and shifts. It emits result + status flags.
