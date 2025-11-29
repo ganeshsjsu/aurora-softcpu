@@ -24,7 +24,7 @@ struct RegisterFile {
   void reset() {
     gpr.fill(0);
     gpr[kRegisterCount - 1] =
-        kStackReset; // Usually R7 is not SP, but initializing it just in case
+        kStackReset;
     pc = kResetVector;
     sp = kStackReset;
     flags.value = 0;
