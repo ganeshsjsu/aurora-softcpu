@@ -45,9 +45,18 @@ make clean      # removes artifacts
 - `assets/cpu_schematic.png` – Diagram of the SoftCPU-16 datapath.
 - `assets/fibonacci_demo.mp4` – Narrated slide-style video highlighting how the Fibonacci assembly program works.
 
-## Authors
+## Team Contributions
 
-- Ganesh
-- Tushar
-- Jeevan
-- Sindhura
+**CMPE 220 — Team 18**
+
+* **Ganesh (014631747)**
+    Led architecture definition, ISA spec, memory map, emulator entry-points, and CLI tooling.
+
+* **Tushar (018282446)**
+    Implemented core CPU logic: ALU, status flag semantics, and control-unit sequencing.
+
+* **Jeevan (017739397)**
+    Authored the assembler, directive/label resolution, and example programs (Hello, Fibonacci, Timer).
+
+* **Sindhura (018169840)**
+    Produced documentation (architecture/emulator/assembler/programs), the schematic, demo video, and compiled the report.
